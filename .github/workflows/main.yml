@@ -7,10 +7,11 @@ jobs:
      
      steps:
         - uses: actions/checkout@v1
-        - name: Set up JDK 11
-          uses: action/setup-java@v1
+        - name: Setup Java JDK
+          uses: actions/setup-java@v3.10.0
           with:
-             java-version: 1.11
+            java-version: 3.10.0
+
         - name: setup java
           run: |
                 javac prime.java
