@@ -1,0 +1,17 @@
+name: prime
+on: [push, pull_request]
+jobs:
+   test:
+     name: Test
+     runs-on: windows-latest
+     
+     steps:
+        - uses: actions/checkout@v1
+        - name: Set up JDK 11
+          uses: action/setup-java@v1
+          with:
+             java-version: 1.11
+        - name: setup java
+          run: |
+                javac prime.java
+                java prime
