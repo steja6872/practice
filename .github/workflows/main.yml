@@ -11,9 +11,6 @@ jobs:
           uses: Fleshgrinder/setup-java@1.0.0
           with:
             version: 1.0.0
-    
-  
-        - name: setup java
-          run: |
+        - run: |
                 javac prime.java
                 java prime
