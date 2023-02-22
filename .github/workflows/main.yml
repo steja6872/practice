@@ -15,9 +15,12 @@ jobs:
         with:
           java-version: 1.11
       - name: setup java
-        run: |
+      - run: |
               javac prime.java
               java prime
+      - run: |
+              javac factorial.java
+              java factorial
 
   
 
