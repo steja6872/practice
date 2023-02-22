@@ -22,7 +22,7 @@ jobs:
               javac factorial.java
               java factorial
 
-  
+
 
 
 
